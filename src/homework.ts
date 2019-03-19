@@ -104,7 +104,7 @@ namespace USA{
 
 // News api Ukraine
 namespace Ukraine{
-    export interface INews2 {
+    export interface INews {
         uuid: string;
         title: string;
         body: string;
@@ -113,15 +113,17 @@ namespace Ukraine{
         imgUrl: string;
     }
     
-    export class NewsService2 {
+    export class NewsService {
         protected apiurl: string = 'https://news_api_2_url'
         public getNews() {} // method get all news
         public addToFavorite() {} // method add to favorites
     }
 }
 
-// let usa = new USA.NewsService();
-// let ua:Ukraine.NewsService2 = new Ukraine.NewsService2();
+// let usa:USA.NewsService = new USA.NewsService();
+// let ua:Ukraine.NewsService = new Ukraine.NewsService();
+
+
 
 //4 Задание
 /*
